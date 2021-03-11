@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header/index';
+import Layout from './Components/Layout/index';
+import Footer from './Components/Footer/index';
+import LayoutImage from './assets/bg3.jpg';
 
-function App() {
+const  App = () => {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello, React.js
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header title="Времена года" descr="Описание времен года" />
+      <Layout title="Осень" descr="рисунок"  colorBg ="white" urlBg={LayoutImage}  />
+      <Layout title="Зима" descr="Какая чудная погода"  colorBg ="green" />
+      <Layout title="Весна" descr="Все тает" colorBg ="#e2e2e2" urlBg={LayoutImage} />
+      <Footer />
+    </>
   );
 }
 
