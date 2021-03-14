@@ -141,7 +141,7 @@ const POKEMONS = [
 ];
 const App = () => {
 
-  return (
+ return (
     <>
       <Header title="Времена года" descr="Описание времен года" />
       <Layout title="Rules" descr="рисунок" colorBg="white" urlBg={LayoutImage} >
@@ -161,7 +161,7 @@ const App = () => {
 
         </div>
       </Layout>
-      <Layout title="Весна" descr="Все тает" colorBg="#e2e2e2" urlBg={LayoutImage} />
+        <Layout title="Весна" descr="Все тает" colorBg="#e2e2e2" urlBg={LayoutImage} />
       <Footer />
     </>
   );
